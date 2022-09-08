@@ -7,13 +7,14 @@ public class Agarrarllave : MonoBehaviour
 {
     bool pickeado;
     private bool en_rango_obj;
-    PlayerSO data;
+    public bool tienellave;
 
     // Start is called before the first frame update
     void Start()
     {
         en_rango_obj = false;
         pickeado = false;
+        tienellave = false;
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class Agarrarllave : MonoBehaviour
             if (Input.GetKey(KeyCode.M))
             {
                 gameObject.SetActive(false);
-                data.tienellave = true;
+                tienellave = true;
             }
         }
     }

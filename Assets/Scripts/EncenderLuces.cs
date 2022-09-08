@@ -5,22 +5,26 @@ using UnityEngine;
 public class EncenderLuces : MonoBehaviour
 {
     private bool en_rango_obj;
-    PlayerSO data;
+    public bool tienellave;
+    public bool correzapzap;
     // Start is called before the first frame update
     void Start()
     {
-        data.tienellave = false;
+        tienellave = false;
+        correzapzap = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-    if (en_rango_obj == true && data.tienellave == true)
+       
+    if (en_rango_obj && tienellave == true)
         {
-            if (Input.GetKey(KeyCode.M))
+            if (Input.GetKey(KeyCode.N))
             {
                 gameObject.SetActive(false);
-                data.correzapzap = true;
+                correzapzap = true;
+                Debug.Log("N");
             }
         }
     }

@@ -8,25 +8,24 @@ public class Agarrarllave : MonoBehaviour
     bool pickeado;
     private bool en_rango_obj;
     public bool tienellave;
+    public GameObject data;
 
     // Start is called before the first frame update
     void Start()
     {
         en_rango_obj = false;
         pickeado = false;
-        tienellave = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (en_rango_obj)
+        tienellave = data.GetComponent<EncenderLuces>().tienellave;
+        if (en_rango_obj && Input.GetKey(KeyCode.M))
         {
-            if (Input.GetKey(KeyCode.M))
-            {
-                gameObject.SetActive(false);
-                tienellave = true;
-            }
+            gameObject.SetActive(false);
+            data.GetComponent<EncenderLuces>().tienellave = true;
+            
         }
     }
     private void OnTriggerEnter(Collider col)

@@ -7,6 +7,7 @@ public class EncenderLuces : MonoBehaviour
     private bool en_rango_obj;
     public bool tienellave;
     public bool correzapzap;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 392283884}
   m_Layer: 0
   m_Name: '[LLAVE]'
-  m_TagString: Untagged
+  m_TagString: KEY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11143,6 +11143,7 @@ GameObject:
   - component: {fileID: 1184490065}
   - component: {fileID: 1184490067}
   - component: {fileID: 1184490066}
+  - component: {fileID: 1184490068}
   m_Layer: 0
   m_Name: PuertaCajaElectrica Cerrada
   m_TagString: Untagged
@@ -11209,6 +11210,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184490064}
   m_Mesh: {fileID: 4300050, guid: eda073de62a6d1243873507b1bffeaac, type: 3}
+--- !u!114 &1184490068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184490064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e1c83a29d920340bbb06cb77694192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tienellave: 0
+  correzapzap: 0
 --- !u!1 &1259170851
 GameObject:
   m_ObjectHideFlags: 0

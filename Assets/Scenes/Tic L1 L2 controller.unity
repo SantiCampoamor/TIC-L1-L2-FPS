@@ -824,6 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienellave: 0
+  data: {fileID: 1184490064}
 --- !u!1 &416446173
 GameObject:
   m_ObjectHideFlags: 0
@@ -11144,6 +11145,7 @@ GameObject:
   - component: {fileID: 1184490067}
   - component: {fileID: 1184490066}
   - component: {fileID: 1184490068}
+  - component: {fileID: 1184490069}
   m_Layer: 0
   m_Name: PuertaCajaElectrica Cerrada
   m_TagString: Untagged
@@ -11224,6 +11226,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tienellave: 0
   correzapzap: 0
+--- !u!135 &1184490069
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184490064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8
+  m_Center: {x: -0.0034185955, y: -0.17640379, z: -0.23529585}
 --- !u!1 &1259170851
 GameObject:
   m_ObjectHideFlags: 0
@@ -12091,6 +12106,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2127229508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127229510}
+  - component: {fileID: 2127229509}
+  m_Layer: 0
+  m_Name: '[Electriquidad Rum Rum]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2127229509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127229508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994c168498d2e7246b47ee7aea3fbeb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2127229510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127229508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.836476, y: 1.0592793, z: 2.7682061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6793038844297052043
 PrefabInstance:

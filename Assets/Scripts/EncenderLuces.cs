@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EncenderLuces : MonoBehaviour
 {
+    [SerializeField] private GameObject Dialogo1;
+    [SerializeField] private GameObject Dialogo2;
+    [SerializeField] private GameObject objetoROJO;
+    [SerializeField] private GameObject objetoVERDE;
     private bool en_rango_obj;
     public bool tienellave;
     public bool correzapzap;
@@ -29,7 +34,24 @@ public class EncenderLuces : MonoBehaviour
                 Debug.Log("N");
             }
         }
+    if (correzapzap == true)
+        {
+            objetoROJO.SetActive(false);
+            objetoVERDE.SetActive(true);
+            carritoPrendido = true;
+        }
+        if (carritoPrendido == true)
+        {
+            Dialogo1.SetActive(false);
+            Dialogo2.SetActive(true);
+        }
+        else if (carritoPrendido == false)
+        {
+            Dialogo1.SetActive(true);
+            Dialogo2.SetActive(false);
+        }
     }
+
     private void OnTriggerEnter(Collider col)
     {
         if (col.tag == "PLAYER")

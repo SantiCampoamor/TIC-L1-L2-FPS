@@ -8,6 +8,7 @@ TagManager:
   - Mesa
   - PLAYER
   - KEY
+  - NPC
   layers:
   - Default
   - TransparentFX

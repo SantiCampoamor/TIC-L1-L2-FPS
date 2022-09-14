@@ -6,8 +6,8 @@ public class Electricidadcorriendo : MonoBehaviour
 {
     [SerializeField] private GameObject objeto;
     [SerializeField] private GameObject Cajaelectrica;
-    private bool tof;
-    private bool electricidadcorriendo;
+    public bool tof;
+    public bool electricidadcorriendo;
 
     // Start is called before the first frame update
     void Start()

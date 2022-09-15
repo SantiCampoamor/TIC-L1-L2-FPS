@@ -7,6 +7,8 @@ public class Dialoguemanager : MonoBehaviour
 {
 
     [SerializeField] GameObject UIElements;
+    [SerializeField] GameObject MisionDialogo0;
+    [SerializeField] GameObject DialogoMision1;
     [SerializeField] Text dialogueTxt;
     [SerializeField] string[] DialogueNPC;
     [SerializeField] DialogueNPC NPCDialogueScript;
@@ -32,7 +34,8 @@ public class Dialoguemanager : MonoBehaviour
             UIElements.SetActive(true);
             DialogueNPC = NPCDialogueScript.data.dialogueLines;
             ShowNextDialogueLine();
-        }
+            MisionDialogo0.SetActive(false);
+}
     }
 
     void OnTriggerExit(Collider other)
@@ -41,6 +44,7 @@ public class Dialoguemanager : MonoBehaviour
         {
             UIElements.SetActive(false);
             dialogueIndex = 0;
+            DialogoMision1.SetActive(true);
         }
     }
 

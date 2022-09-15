@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DataCubo
   m_EditorClassIdentifier: 
   dialogueLines:
-  - Necesito que pongas a cargar las compus
+  - Necesito que pongas a cargar las compus, la llave esta en la mesa de ping pong
   - Muy bien gracias

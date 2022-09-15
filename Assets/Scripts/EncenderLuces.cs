@@ -7,6 +7,9 @@ public class EncenderLuces : MonoBehaviour
 {
     [SerializeField] private GameObject Dialogo1;
     [SerializeField] private GameObject Dialogo2;
+    [SerializeField] private GameObject MisionDialogo0;
+    [SerializeField] private GameObject MisionDialogo1;
+    [SerializeField] private GameObject MisionDialogo2;
     [SerializeField] private GameObject objetoROJO;
     [SerializeField] private GameObject objetoVERDE;
     private bool en_rango_obj;
@@ -19,6 +22,9 @@ public class EncenderLuces : MonoBehaviour
     {
         tienellave = false;
         correzapzap = false;
+        MisionDialogo0.SetActive(true); 
+        MisionDialogo1.SetActive(false);
+        MisionDialogo2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,16 +40,24 @@ public class EncenderLuces : MonoBehaviour
                 Debug.Log("N");
             }
         }
+    if (tienellave == true)
+        {
+            MisionDialogo2.SetActive(true);
+            MisionDialogo1.SetActive(false);
+
+        }
     if (correzapzap == true)
         {
             objetoROJO.SetActive(false);
             objetoVERDE.SetActive(true);
             carritoPrendido = true;
+            MisionDialogo2.SetActive(false);
         }
         if (carritoPrendido == true)
         {
             Dialogo1.SetActive(false);
             Dialogo2.SetActive(true);
+            MisionDialogo0.SetActive(true); 
         }
         else if (carritoPrendido == false)
         {
